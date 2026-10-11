@@ -1,12 +1,12 @@
 # 📦 LabGAn
-LabGAn es una biblioteca experimental creada con fines educativos para poder trabajar con objetos de la geometría analítica (R², R³) como un plano o como espacio vectorial.
+LabGAn es una biblioteca experimental creada con fines educativos para poder trabajar con objetos de la geometría analítica (\mathbb{R}^2, \mathbb{R}^3)vistos como un plano (en particular el plano cartesian) o como espacio vectorial.
 Esta biblioteca se irá desarrollando conforme avanze mi curso de geometría analítica de la universidad, ya que es solo para retomar el ocnocimiento y generar construcciones.
 
 ## ✨ Características
 En la versión 0.1.0.0 de esta biblioteca solo se añaden los tipos de Punto2D, así como las siguientes funciones
 - Operaciones de suma y resta de puntos
 - Distancias entre puntos y distancias desde el origen
-- Tipo de dato Cuadrante que permite localizar puntos en los cuadrantes del plano $R^2$
+- Tipo de dato Cuadrante que permite localizar puntos en los cuadrantes del plano $\mathbb{R}^2$
 
 ## Dependencias
 Esta biblioteca esta hecha unicamente con el núcleo de Haskell, por lo que no necesita de bibliotecas externas. Solo será necesario usar el *prelude* de Haskell.
