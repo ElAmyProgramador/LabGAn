@@ -1,4 +1,4 @@
--- módulo de las operaciones con Puntos (de momento solo R^2)
+-- módulo de las operaciones con Puntos (de momento solo coordY a2)
 
 module Geometria.Punto where
 
@@ -31,9 +31,9 @@ restaPuntos2D a b = Punto2D (coordX a - coordX b) (coordY a - coordY b)
 
 -- función para calcular la distancia entre 2 Puntos
 distanciaPuntos2D :: (Integral a, Floating b) => Punto2D a -> Punto2D a -> b
-distanciaPuntos2D (Punto2D x1 y1) (Punto2D x2 y2) = sqrt $ fromIntegral d
+distanciaPuntos2D a b = sqrt $ fromIntegral d
     where
-        d = (x2 - x1) ^2 + (y2 - y1)
+        d = (coordX b - coordX a) ^2 + (coordY b - coordY a) ^2
 
 -- función para calcular la distancia de un Punto al origen
 distanciaPuntos2DOrigen :: (Integral a, Floating b) => Punto2D a -> b

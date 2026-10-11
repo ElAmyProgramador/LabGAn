@@ -3,7 +3,10 @@ LabGAn es una biblioteca experimental creada con fines educativos para poder tra
 Esta biblioteca se irá desarrollando conforme avanze mi curso de geometría analítica de la universidad, ya que es solo para retomar el ocnocimiento y generar construcciones.
 
 ## ✨ Características
-De momento no hay alguna característica, relevante, pues este es el primer
+En la versión 0.1.0.0 de esta biblioteca solo se añaden los tipos de Punto2D, así como las siguientes funciones
+- Operaciones de suma y resta de puntos
+- Distancias entre puntos y distancias desde el origen
+- Tipo de dato Cuadrante que permite localizar puntos en los cuadrantes del plano $R^2$
 
 ## Dependencias
 Esta biblioteca esta hecha unicamente con el núcleo de Haskell, por lo que no necesita de bibliotecas externas. Solo será necesario usar el *prelude* de Haskell.
