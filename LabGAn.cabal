@@ -3,6 +3,7 @@ name:                   LabGAn
 version:                0.1.0.0
 synopsis:
     Biblioteca para trabajar con objetos de la geometría analítica, llevado a cabo de acuerdo a un curso universitario.
+homepage:               https://github.com/ElAmyProgramador/LabGAn
 
 -- description:
 license:                MIT
