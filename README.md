@@ -1,5 +1,5 @@
 # 📦 LabGAn
-LabGAn es una biblioteca experimental creada con fines educativos para poder trabajar con objetos de la geometría analítica (\mathbb{R}^2, \mathbb{R}^3)vistos como un plano (en particular el plano cartesian) o como espacio vectorial.
+LabGAn es una biblioteca experimental creada con fines educativos para poder trabajar con objetos de la geometría analítica ($\mathbb{R}^2, \mathbb{R}^3$) vistos como un plano (en particular el plano cartesian) o como espacio vectorial.
 Esta biblioteca se irá desarrollando conforme avanze mi curso de geometría analítica de la universidad, ya que es solo para retomar el ocnocimiento y generar construcciones.
 
 ## ✨ Características
