@@ -8,6 +8,10 @@ En la versión 0.1.0.0 de esta biblioteca solo se añaden los tipos de Punto2D, 
 - Distancias entre puntos y distancias desde el origen
 - Tipo de dato Cuadrante que permite localizar puntos en los cuadrantes del plano $\mathbb{R}^2$
 
+## Módulos actuales
+- [Geometria.Tipos](src/Geometria/Tipos.hs) contiene la definición de Punto2D, Cuadrante y sus estancias de Show, Eq.
+- [Geometria.Punto](src/Geometria/Punto.hs) contiene funciones de comparación, suma, resta, etcétera entre los puntos de $\mathbb{R}^2$.
+
 ## Dependencias
 Esta biblioteca esta hecha unicamente con el núcleo de Haskell, por lo que no necesita de bibliotecas externas. Solo será necesario usar el *prelude* de Haskell.
 
@@ -15,7 +19,25 @@ Esta biblioteca esta hecha unicamente con el núcleo de Haskell, por lo que no n
 Para evitar problemas con distribuciones con filosofía rolling release como Arch Linux u OpenSUSE Tumbleweed se usará [GHCup](https://www.haskell.org/ghcup/) y cabal para generar el archivo de configuración del proyecto.
 
 - La versión de Haskell y de ghci (el intérprete de Haskell) a usar es la version 9.10.3
-- La versión de Cabal a usar es la versión 3.16.1.0 
+- La versión de Cabal a usar es la versión 3.16.1.0
+
+### Instalación
+Para instalar esta biblioteca solamente haz git clone sobre este repo y utiliza cabal build (hasta donde sé).
+```bash
+cabal build
+```
+
+## Ejemplo de uso rápido
+Se muestra un ejemplo sobre como sumar 2 puntos y como obtener la distancia entre ellos en $\mathbb{R}^2$.
+```haskell
+import Geometria
+
+p1 = Punto2D 3 4
+p2 = Punto2D 5.0 2
+
+sumaPuntos2D p1 p2
+distanciaPuntos2D p1 p2
+```
 
 ## 📜 Licencia
 Este proyecto está bajo la licencia [MIT](https://mit-license.org/). Puede ser usada libremente, modificada y distribuible libremente siempre y cuando se mantenga la atribución correspondiente a la biblioteca.

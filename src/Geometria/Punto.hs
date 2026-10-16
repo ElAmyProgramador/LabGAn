@@ -30,13 +30,13 @@ restaPuntos2D :: Floating a => Punto2D a -> Punto2D a -> Punto2D a
 restaPuntos2D a b = Punto2D (coordX a - coordX b) (coordY a - coordY b)
 
 -- función para calcular la distancia entre 2 Puntos
-distanciaPuntos2D :: (Integral a, Floating b) => Punto2D a -> Punto2D a -> b
-distanciaPuntos2D a b = sqrt $ fromIntegral d
+distanciaPuntos2D :: Floating a => Punto2D a -> Punto2D a -> a
+distanciaPuntos2D a b = sqrt d
     where
         d = (coordX b - coordX a) ^2 + (coordY b - coordY a) ^2
 
 -- función para calcular la distancia de un Punto al origen
-distanciaPuntos2DOrigen :: (Integral a, Floating b) => Punto2D a -> b
+distanciaPuntos2DOrigen :: Floating a => Punto2D a -> a
 distanciaPuntos2DOrigen a = distanciaPuntos2D origen a
 
 -- algunas funciones booleanas
