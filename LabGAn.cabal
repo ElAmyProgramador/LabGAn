@@ -24,6 +24,7 @@ library
     exposed-modules:    Geometria
                         Geometria.Tipos
                         Geometria.Punto
+                        Geometria.Segmento
     -- other-modules:
     -- other-extensions:
     build-depends:      base ^>=4.20.2.0

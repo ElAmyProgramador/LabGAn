@@ -17,9 +17,12 @@ cuadrante a
     | coordX a > 0 && coordY a < 0      = Just IV
     | otherwise                         = Nothing
 
--- función del punto medio
-pMPunto2D :: Floating a => Punto2D a -> Punto2D a
-pMPunto2D a = Punto2D (coordX a / 2) (coordY a / 2)
+-- función del punto medio entre 2 puntos
+pMPunto2D :: (Floating a, Fractional a) => Punto2D a -> Punto2D a -> Punto2D a
+pMPunto2D a b = Punto2D x y
+    where
+        x = (coordX b + coordX a) / 2
+        y = (coordY b + coordY a) / 2
 
 -- función de suma de Puntos 2D
 sumaPuntos2D :: Floating a => Punto2D a -> Punto2D a -> Punto2D a
