@@ -1,6 +1,6 @@
 cabal-version:          3.0
 name:                   LabGAn
-version:                0.1.0.0
+version:                0.2.0.0
 synopsis:
     Biblioteca para trabajar con objetos de la geometría analítica, llevado a cabo de acuerdo a un curso universitario.
 homepage:               https://github.com/ElAmyProgramador/LabGAn
@@ -25,6 +25,7 @@ library
                         Geometria.Tipos
                         Geometria.Punto
                         Geometria.Segmento
+                        Geometria.Poligono
     -- other-modules:
     -- other-extensions:
     build-depends:      base ^>=4.20.2.0

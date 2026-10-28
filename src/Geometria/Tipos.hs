@@ -22,12 +22,12 @@ instance Show a => Show (Punto2D a) where
 
 -- Eq
 instance Eq a => Eq (Punto2D a) where
-    (==) :: Eq a => Punto2D a -> Punto2D a -> Bool
-    (Punto2D x1 y1) == (Punto2D x2 y2)
-        = x1 == x2 && y1 == y2
+    (==) :: Punto2D a -> Punto2D a -> Bool
+    (Punto2D x1 y1) == (Punto2D x2 y2) =
+        x1 == x2 && y1 == y2
     (/=) :: Eq a => Punto2D a -> Punto2D a -> Bool
-    (Punto2D x1 y1) /= (Punto2D x2 y2)
-        = x1 /= x2 || y1 /= y2
+    (Punto2D x1 y1) /= (Punto2D x2 y2) =
+        x1 /= x2 || y1 /= y2
 
 -- Cuadrante
 instance Show Cuadrante where

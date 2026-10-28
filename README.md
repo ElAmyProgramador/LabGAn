@@ -7,10 +7,12 @@ En la versión 0.1.0.0 de esta biblioteca solo se añaden los tipos de Punto2D, 
 - Operaciones de suma y resta de puntos
 - Distancias entre puntos y distancias desde el origen
 - Tipo de dato Cuadrante que permite localizar puntos en los cuadrantes del plano $\mathbb{R}^2$
+- Tipo de dato poligono para crear objetos asociados a puntos, mostrarlos y compararlos
 
 ## Módulos actuales
 - [Geometria.Tipos](src/Geometria/Tipos.hs) contiene la definición de Punto2D, Cuadrante y sus estancias de Show, Eq.
-- [Geometria.Punto](src/Geometria/Punto.hs) contiene funciones de comparación, suma, resta, etcétera entre los puntos de $\mathbb{R}^2$.
+- [Geometria.Punto](src/Geometria/Punto.hs) contiene funciones de comparación, suma, resta, etcétera entre los puntos de $\mathbb{R}^2$
+- [Geometria.Poligono](src/Geometria/Poligono.hs) contiene la creación de objetos como triangulos, cuadrilatero y sus instancias de Show y Eq, y una función para calcular perimetros.
 
 ## Dependencias
 Esta biblioteca esta hecha unicamente con el núcleo de Haskell, por lo que no necesita de bibliotecas externas. Solo será necesario usar el *prelude* de Haskell.
